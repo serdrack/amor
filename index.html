@@ -1,0 +1,1840 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Feliz aniversário, meu amoooooooooor ❤️</title>
+
+  <meta
+    name="description"
+    content="Uma pequena surpresa."
+  >
+
+  <style>
+    :root {
+      --bg: #120d18;
+      --bg-2: #1b1021;
+      --card: rgba(255, 255, 255, 0.08);
+      --text: #fff8fc;
+      --muted: #e7d8e2;
+      --pink: #ff6fa8;
+      --pink-soft: #ffb4cf;
+      --purple: #bd7cff;
+      --border: rgba(255, 255, 255, 0.14);
+      --shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+      background:
+        radial-gradient(
+          circle at 15% 10%,
+          rgba(255,111,168,.18),
+          transparent 30%
+        ),
+        radial-gradient(
+          circle at 85% 20%,
+          rgba(189,124,255,.16),
+          transparent 28%
+        ),
+        linear-gradient(
+          180deg,
+          var(--bg-2),
+          var(--bg)
+        );
+
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    .hero {
+      min-height: 100vh;
+
+      display: grid;
+      place-items: center;
+
+      padding: 36px 20px 80px;
+
+      position: relative;
+      isolation: isolate;
+    }
+
+    .hero::before {
+      content: "";
+
+      position: absolute;
+      inset: 0;
+
+      z-index: -2;
+
+      background:
+        radial-gradient(
+          circle at 50% 30%,
+          rgba(255,111,168,.10),
+          transparent 35%
+        ),
+        radial-gradient(
+          circle at 50% 100%,
+          rgba(189,124,255,.09),
+          transparent 40%
+        );
+    }
+
+    .sparkles {
+      position: absolute;
+
+      inset: 0;
+
+      z-index: -1;
+
+      pointer-events: none;
+
+      overflow: hidden;
+    }
+
+    .sparkle {
+      position: absolute;
+
+      width: 6px;
+      height: 6px;
+
+      border-radius: 50%;
+
+      background: #fff;
+
+      opacity: .65;
+
+      animation:
+        twinkle 3s ease-in-out infinite;
+    }
+
+    @keyframes twinkle {
+      0%,100% {
+        transform: scale(.7);
+        opacity: .2;
+      }
+
+      50% {
+        transform: scale(1.3);
+        opacity: .9;
+      }
+    }
+
+    .hero-inner {
+      width: min(980px, 100%);
+
+      text-align: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+
+      padding: 8px 14px;
+
+      border: 1px solid var(--border);
+
+      border-radius: 999px;
+
+      background: rgba(255,255,255,.05);
+
+      color: var(--pink-soft);
+
+      font-weight: 700;
+
+      letter-spacing: .04em;
+
+      text-transform: uppercase;
+
+      font-size: .78rem;
+
+      backdrop-filter: blur(12px);
+    }
+
+    h1 {
+      font-size:
+        clamp(
+          3rem,
+          10vw,
+          7rem
+        );
+
+      line-height: .92;
+
+      margin: 22px 0 18px;
+
+      letter-spacing: -0.055em;
+    }
+
+    .gradient-text {
+      background:
+        linear-gradient(
+          135deg,
+          #fff,
+          var(--pink-soft) 45%,
+          var(--purple)
+        );
+
+      -webkit-background-clip: text;
+
+      background-clip: text;
+
+      color: transparent;
+    }
+
+    .subtitle {
+      width: min(700px, 100%);
+
+      margin: 0 auto;
+
+      color: var(--muted);
+
+      font-size:
+        clamp(
+          1rem,
+          2.5vw,
+          1.25rem
+        );
+
+      line-height: 1.7;
+    }
+
+    .hero-actions {
+      margin-top: 30px;
+
+      display: flex;
+
+      justify-content: center;
+
+      gap: 12px;
+
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      border: 0;
+
+      border-radius: 14px;
+
+      padding: 14px 20px;
+
+      cursor: pointer;
+
+      font-weight: 800;
+
+      transition:
+        transform .2s ease,
+        box-shadow .2s ease,
+        background .2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      color: #250c18;
+
+      background:
+        linear-gradient(
+          135deg,
+          #ffd0e0,
+          var(--pink)
+        );
+
+      box-shadow:
+        0 16px 34px
+        rgba(255,111,168,.24);
+    }
+
+    .btn-secondary {
+      color: var(--text);
+
+      background:
+        rgba(255,255,255,.06);
+
+      border:
+        1px solid var(--border);
+
+      backdrop-filter: blur(8px);
+    }
+
+    .section {
+      width:
+        min(
+          980px,
+          calc(100% - 40px)
+        );
+
+      margin: 0 auto;
+
+      padding: 90px 0;
+    }
+
+    .section-title {
+      text-align: center;
+
+      margin: 0 0 12px;
+
+      font-size:
+        clamp(
+          2rem,
+          5vw,
+          3.4rem
+        );
+
+      letter-spacing: -0.04em;
+    }
+
+    .section-subtitle {
+      text-align: center;
+
+      max-width: 650px;
+
+      margin: 0 auto 34px;
+
+      color: var(--muted);
+
+      line-height: 1.7;
+    }
+
+    .message-card {
+      width: min(760px, 100%);
+
+      margin: 0 auto;
+
+      padding: 34px;
+
+      border-radius: 28px;
+
+      border:
+        1px solid var(--border);
+
+      background:
+        linear-gradient(
+          180deg,
+          rgba(255,255,255,.10),
+          rgba(255,255,255,.05)
+        );
+
+      box-shadow: var(--shadow);
+
+      backdrop-filter: blur(16px);
+
+      position: relative;
+
+      overflow: hidden;
+    }
+
+    .message-card::before {
+      content: "❤";
+
+      position: absolute;
+
+      top: -36px;
+      right: 14px;
+
+      font-size: 9rem;
+
+      color:
+        rgba(255,111,168,.08);
+
+      transform: rotate(12deg);
+    }
+
+    .message-card p {
+      color: var(--muted);
+
+      line-height: 1.9;
+
+      font-size: 1.05rem;
+
+      white-space: pre-line;
+
+      position: relative;
+
+      z-index: 1;
+    }
+
+    .signature {
+      margin-top: 24px;
+
+      font-size: 1.15rem;
+
+      font-weight: 900;
+
+      color: var(--pink-soft);
+
+      position: relative;
+
+      z-index: 1;
+    }
+
+    .timeline {
+      display: grid;
+
+      gap: 18px;
+
+      max-width: 800px;
+
+      margin: 0 auto;
+    }
+
+    .moment {
+      display: grid;
+
+      grid-template-columns: 86px 1fr;
+
+      gap: 18px;
+
+      align-items: center;
+
+      padding: 18px;
+
+      background:
+        rgba(255,255,255,.05);
+
+      border:
+        1px solid var(--border);
+
+      border-radius: 22px;
+    }
+
+    .moment-number {
+      aspect-ratio: 1;
+
+      display: grid;
+
+      place-items: center;
+
+      border-radius: 18px;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(255,111,168,.2),
+          rgba(189,124,255,.16)
+        );
+
+      border:
+        1px solid
+        rgba(255,255,255,.12);
+
+      font-size: 1.5rem;
+
+      font-weight: 900;
+    }
+
+    .moment h3 {
+      margin: 0 0 6px;
+    }
+
+    .moment p {
+      margin: 0;
+
+      color: var(--muted);
+
+      line-height: 1.6;
+    }
+
+    .story-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(2, 1fr);
+
+      gap: 16px;
+    }
+
+    .story-card {
+      padding: 24px;
+
+      border-radius: 22px;
+
+      border:
+        1px solid var(--border);
+
+      background:
+        rgba(255,255,255,.05);
+    }
+
+    .story-card .date {
+      color: var(--pink-soft);
+
+      font-size: .82rem;
+
+      font-weight: 800;
+
+      text-transform: uppercase;
+
+      letter-spacing: .05em;
+
+      margin-bottom: 8px;
+    }
+
+    .story-card h3 {
+      margin: 0 0 8px;
+
+      font-size: 1.25rem;
+    }
+
+    .story-card p {
+      margin: 0;
+
+      color: var(--muted);
+
+      line-height: 1.7;
+    }
+
+    .gallery {
+      display: grid;
+
+      grid-template-columns:
+        repeat(4, 1fr);
+
+      gap: 16px;
+    }
+
+    .photo {
+      aspect-ratio: 4/5;
+
+      border-radius: 24px;
+
+      overflow: hidden;
+
+      border:
+        1px solid var(--border);
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(255,111,168,.16),
+          rgba(189,124,255,.12)
+        );
+
+      position: relative;
+
+      box-shadow:
+        var(--shadow);
+    }
+
+    .photo img {
+      width: 100%;
+
+      height: 100%;
+
+      object-fit: cover;
+
+      display: block;
+    }
+
+    .photo span {
+      position: absolute;
+
+      left: 12px;
+      right: 12px;
+
+      bottom: 12px;
+
+      padding:
+        9px 12px;
+
+      border-radius: 12px;
+
+      background:
+        rgba(0,0,0,.36);
+
+      backdrop-filter:
+        blur(10px);
+
+      color: #fff;
+
+      font-weight: 700;
+
+      font-size: .9rem;
+    }
+
+    .music-card {
+      width: min(700px, 100%);
+
+      margin: 0 auto;
+
+      padding: 24px;
+
+      border-radius: 22px;
+
+      border:
+        1px solid var(--border);
+
+      background:
+        rgba(255,255,255,.05);
+
+      text-align: center;
+    }
+
+    .music-card p {
+      color: var(--muted);
+
+      line-height: 1.7;
+
+      margin: 0 0 16px;
+    }
+
+    .music-card audio {
+      width: 100%;
+    }
+
+    .surprise-wrap {
+      text-align: center;
+    }
+
+    .surprise-box {
+      width: min(700px, 100%);
+
+      margin: 24px auto 0;
+
+      padding: 28px;
+
+      border-radius: 26px;
+
+      border:
+        1px solid
+        rgba(255,111,168,.26);
+
+      background:
+        rgba(255,111,168,.08);
+
+      display: none;
+
+      animation:
+        pop .45s
+        cubic-bezier(.2,.8,.2,1);
+    }
+
+    .surprise-box.show {
+      display: block;
+    }
+
+    @keyframes pop {
+      from {
+        opacity: 0;
+
+        transform:
+          translateY(14px)
+          scale(.98);
+      }
+
+      to {
+        opacity: 1;
+
+        transform:
+          translateY(0)
+          scale(1);
+      }
+    }
+
+    .surprise-box .big-heart {
+      font-size: 3rem;
+    }
+
+    .surprise-box h3 {
+      margin: 10px 0;
+
+      font-size: 1.8rem;
+    }
+
+    .surprise-box p {
+      color: var(--muted);
+
+      line-height: 1.8;
+
+      margin: 0;
+    }
+
+    footer {
+      padding:
+        30px 20px 50px;
+
+      text-align: center;
+
+      color: #cdb9c7;
+
+      font-size: .9rem;
+    }
+
+    .floating-heart {
+      position: fixed;
+
+      bottom: -50px;
+
+      pointer-events: none;
+
+      opacity: .85;
+
+      animation:
+        floatUp
+        linear
+        forwards;
+
+      z-index: 20;
+
+      filter:
+        drop-shadow(
+          0 8px 15px
+          rgba(255,111,168,.2)
+        );
+    }
+
+    @keyframes floatUp {
+      to {
+        transform:
+          translateY(-115vh)
+          translateX(var(--drift))
+          rotate(18deg);
+
+        opacity: 0;
+      }
+    }
+
+    @media (max-width: 850px) {
+
+      .gallery {
+        grid-template-columns:
+          repeat(2, 1fr);
+      }
+
+    }
+
+    @media (max-width: 760px) {
+
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .moment {
+        grid-template-columns:
+          64px 1fr;
+      }
+
+      .story-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section {
+        padding: 70px 0;
+      }
+
+      .message-card {
+        padding: 25px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div
+    class="sparkles"
+    aria-hidden="true"
+    id="sparkles">
+  </div>
+
+
+  <main>
+
+    <!-- ===============================
+         PRIMEIRA TELA
+         =============================== -->
+
+    <section class="hero">
+
+      <div class="hero-inner">
+
+        <div
+          class="eyebrow"
+          id="eyebrow">
+
+          Uma surpresa só pra você
+
+        </div>
+
+
+        <h1>
+
+          <span class="gradient-text">
+
+            Feliz aniversário,
+
+          </span>
+
+          <br>
+
+          <span id="nameTitle">
+
+            Meu Amor
+
+          </span>
+
+          ❤️
+
+        </h1>
+
+
+        <p
+          class="subtitle"
+          id="introText">
+
+          Hoje é teu dia, mas sinceramente?
+          Quem ganhou o presente fui eu.
+
+        </p>
+
+
+        <div class="hero-actions">
+
+          <button
+            class="btn btn-primary"
+            id="openLetter">
+
+            💌 Abrir minha carta
+
+          </button>
+
+
+          <a
+            class="btn btn-secondary"
+            href="#fotos">
+
+            📸 Nossas fotos
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ===============================
+         CARTA
+         =============================== -->
+
+    <section
+      class="section"
+      id="carta">
+
+      <h2 class="section-title">
+
+        Uma carta pra você
+
+      </h2>
+
+
+      <p class="section-subtitle">
+
+        Porque algumas coisas ficam muito
+        melhores quando a gente escreve.
+
+      </p>
+
+
+      <article class="message-card">
+
+        <p id="messageText"></p>
+
+
+        <div
+          class="signature"
+          id="signature">
+        </div>
+
+      </article>
+
+    </section>
+
+
+
+    <!-- ===============================
+         MOMENTOS
+         =============================== -->
+
+    <section class="section">
+
+      <h2 class="section-title">
+
+        Coisas que eu amo em nós
+
+      </h2>
+
+
+      <p class="section-subtitle">
+
+        Algumas coisas que fazem nossa história
+        ser do nosso jeitinho.
+
+      </p>
+
+
+      <div
+        class="timeline"
+        id="timeline">
+      </div>
+
+    </section>
+
+
+
+    <!-- ===============================
+         HISTÓRIA
+         =============================== -->
+
+    <section class="section">
+
+      <h2 class="section-title">
+
+        Nossa história ❤️
+
+      </h2>
+
+
+      <p class="section-subtitle">
+
+        Alguns capítulos da nossa história.
+
+      </p>
+
+
+      <div
+        class="story-grid"
+        id="storyGrid">
+      </div>
+
+    </section>
+
+
+
+    <!-- ===============================
+         MÚSICA
+         =============================== -->
+
+    <section class="section">
+
+      <h2 class="section-title">
+
+        Uma música pra você 🎵
+
+      </h2>
+
+
+      <p class="section-subtitle">
+
+        Coloque um arquivo chamado
+        <strong>musica.mp3</strong>
+        na mesma pasta do index.html.
+
+      </p>
+
+
+      <div class="music-card">
+
+        <p id="musicText">
+
+          Essa aqui é só pra deixar o clima
+          mais bonitinho. ❤️
+
+        </p>
+
+
+        <audio
+          controls
+          preload="metadata">
+
+          <source
+            src="musica.mp3"
+            type="audio/mpeg">
+
+          Seu navegador não conseguiu
+          carregar a música.
+
+        </audio>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ===============================
+         FOTOS
+         =============================== -->
+
+    <section
+      class="section"
+      id="fotos">
+
+      <h2 class="section-title">
+
+        Nosso pequeno álbum 📸
+
+      </h2>
+
+
+      <p class="section-subtitle">
+
+        Nossas quatro fotos ❤️
+
+      </p>
+
+
+      <div
+        class="gallery"
+        id="gallery">
+      </div>
+
+    </section>
+
+
+
+    <!-- ===============================
+         SURPRESA FINAL
+         =============================== -->
+
+    <section
+      class="section surprise-wrap">
+
+      <h2 class="section-title">
+
+        Tem mais uma coisinha...
+
+      </h2>
+
+
+      <p class="section-subtitle">
+
+        Só abre quando chegar no final. 😌
+
+      </p>
+
+
+      <button
+        class="btn btn-primary"
+        id="surpriseButton">
+
+        🎁 Abrir surpresa
+
+      </button>
+
+
+      <div
+        class="surprise-box"
+        id="surpriseBox">
+
+        <div class="big-heart">
+
+          💗
+
+        </div>
+
+
+        <h3
+          id="surpriseTitle">
+
+          Tá, agora vem a parte
+          mais melosa KKKK. ❤️
+
+        </h3>
+
+
+        <p
+          id="surpriseText">
+
+          Eu te amo MUITO.
+
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <footer
+    id="footerText">
+
+    Feito com muito amor ❤️
+
+  </footer>
+
+
+
+  <script>
+
+    /* ==========================================================
+       CONFIGURAÇÃO
+
+       É SÓ AQUI QUE VOCÊ PRECISA MEXER.
+       ========================================================== */
+
+
+    const CONFIG = {
+
+      /* =============================
+         NOME DELA
+         ============================= */
+
+      nome:
+        "manuely meu nenem",
+
+
+      /* =============================
+         ASSINATURA
+         ============================= */
+
+      quemEscreveu:
+        "Do serdrack, que te ama pra caralho ❤️",
+
+
+      /* =============================
+         FRASE DA PRIMEIRA TELA
+         ============================= */
+
+      intro:
+        "Hoje é seu dia, mas sinceramente? Quem ganhou o presente fui eu quando vc apareceu na minha vida. ❤️",
+
+
+      /* =============================
+         CARTA
+         ============================= */
+
+      mensagem: `Feliz aniversário, meu amor! ❤️
+
+amo, eu nem sei direito como começar pq parece que por mais que eu escreva ainda vai faltar coisas pra falar pra você.
+
+Você consegue deixar meus dias muito melhores só sendo vc. E eu amo nossas conversas nossas risadas aqueles momentos aleatórios que só nós dois entendemos KKKK.
+
+Obrigado por cada segundo por cada abraço por cada risada e por continuar do meu lado de vdd eu sou mt feliz por ter você cmg.
+
+Espero poder comemorar esse dia com vc por muitos e muitos anos ainda quero viver um monte de coisa com vc criar várias lembranças e depois ficar lembrando delas e pensando "porra, olha tudo que a gente já viveu". ❤️
+
+Eu te amo muito tipo muito mesmo aproveita MUITO seu dia pq você merece tudo de bom nesse mundooooooooooooo. 💗`,
+
+
+      /* =============================
+         MOMENTOS
+         ============================= */
+
+      momentos: [
+
+        {
+          titulo:
+            " bom dia 28 de abril ❤️",
+
+          texto:
+            "O dia que eu te conheci sinceramente naquele dia eu nem imaginava onde isso ia dar KKKK achei q seria so mais uma pessoa aleatoria q se falava 2 vezes e sumia "
+        },
+
+        {
+
+          titulo:
+            "e o grande dia 4 de agosto 💗",
+
+          texto:
+            "O dia que a gente começou a namorar de vdd pq ate em tao era so na fala kk mas graças a Deus vc veio pra minha vida e hj vc e minha e nada vai mudar isso AMEM."
+        },
+
+        {
+
+          titulo:
+            "Daqui pra frente ✨",
+
+          texto:
+            "daqui pra frente eu espero muito q a gente seja muito mais feliz eu quero cuidar e ficar cntg pro resto de minha vida e te fazer feliz assim como vc me faz feliz"
+        }
+
+      ],
+
+
+      /* =============================
+         HISTÓRIA
+         ============================= */
+
+      historia: [
+
+        {
+
+          data:
+            "28 DE ABRIL",
+
+          titulo:
+            "Foi aí que começou 👀",
+
+          texto:
+            'imagina pensar q isso tudo iria acontecer jamais pensei q estariamos juntos ate pq eu ainda acho q vc e dms pra mim.'
+        },
+
+        {
+
+          data:
+            "4 DE AGOSTO",
+
+          titulo:
+            "Ate q ai virou verdade ❤️",
+
+          texto:
+            "um dos dias mais corridos e mais malucos de todos aconteceram mts coisas vc ficou sem celular a larissa me spammando msgs mas no final deu td certo e agr estamos aq."
+        },
+
+        {
+
+          data:
+            "CADA DIA",
+
+          titulo:
+            "Nós do jeitinho que somos",
+
+          texto:
+            "No fim oq eu mais amo em vc e simplemente o seu jeitinho de ser toda atrapalhada e engraçada mesmo q vc n esteja bem."
+        },
+
+        {
+
+          data:
+            "DAQUI PRA FRENTE",
+
+          titulo:
+            "E ainda tem mais",
+
+          texto:
+            "Tem muita coisa que eu ainda quero viver com vc quero viajar com vc para todo o canto do mundo quero q meu canal de certo estando com vc para nos dos desfrutarmos disso."
+        }
+
+      ],
+
+
+      /* =============================
+         FOTOS
+
+         COLOQUE AS FOTOS NA PASTA:
+         fotos/
+
+         E CHAME ELAS DE:
+
+         foto1.jpg
+         foto2.jpg
+         foto3.mp4
+         foto4.jpg
+         ============================= */
+
+      fotos: [
+
+        {
+
+          arquivo:
+            "fotos/foto2.jpg",
+
+          legenda:
+            "Uma das minhas fotos favoritas com você. ❤️"
+
+        },
+
+        {
+
+          arquivo:
+            "fotos/foto4.jpg",
+
+          legenda:
+            "Essa aqui me faz sorrir toda vez."
+
+        },
+
+        {
+
+          arquivo:
+            "fotos/foto3.mp4",
+
+          legenda:
+            "Mais uma lembrança nossa. ❤️"
+
+        },
+
+        {
+
+          arquivo:
+            "fotos/foto1.jpg",
+
+          legenda:
+            "Que venham muitos outros momentos."
+
+        }
+
+      ],
+
+
+      /* =============================
+         MÚSICA
+         ============================= */
+
+      musicaTexto:
+        "Essa aqui é só pra deixar o clima mais bonitinho. E sim, eu escolhi pensando em você. ❤️",
+
+
+      /* =============================
+         SURPRESA FINAL
+         ============================= */
+
+      surpresaTitulo:
+        "Tá, agora oia so kkkk ❤️",
+
+
+      surpresaTexto:
+        "Eu te amo muito muito amo pra mim vc e  minha gatinha meu nenem a pessoa em q eu mais amo nesse mundo. ❤️",
+
+
+      /* =============================
+         RODAPÉ
+         ============================= */
+
+      rodape:
+        "Feito com muito amor e um pouco tempo KKKK ❤️"
+
+    };
+
+
+
+    /* ==========================================================
+       A PARTIR DAQUI NÃO PRECISA EDITAR
+       ========================================================== */
+
+
+    document.title =
+      `Feliz aniversário, ${CONFIG.nome} ❤️`;
+
+
+    document
+      .getElementById("nameTitle")
+      .textContent =
+      CONFIG.nome;
+
+
+    document
+      .getElementById("introText")
+      .textContent =
+      CONFIG.intro;
+
+
+    document
+      .getElementById("messageText")
+      .textContent =
+      CONFIG.mensagem;
+
+
+    document
+      .getElementById("signature")
+      .textContent =
+      CONFIG.quemEscreveu;
+
+
+    document
+      .getElementById("surpriseTitle")
+      .textContent =
+      CONFIG.surpresaTitulo;
+
+
+    document
+      .getElementById("surpriseText")
+      .textContent =
+      CONFIG.surpresaTexto;
+
+
+    document
+      .getElementById("musicText")
+      .textContent =
+      CONFIG.musicaTexto;
+
+
+    document
+      .getElementById("footerText")
+      .textContent =
+      CONFIG.rodape;
+
+
+
+    /* ==========================================================
+       MOMENTOS
+       ========================================================== */
+
+
+    const timeline =
+      document.getElementById(
+        "timeline"
+      );
+
+
+    CONFIG.momentos.forEach(
+      (momento, index) => {
+
+        const item =
+          document.createElement(
+            "article"
+          );
+
+
+        item.className =
+          "moment";
+
+
+        item.innerHTML = `
+
+          <div class="moment-number">
+
+            ${index + 1}
+
+          </div>
+
+
+          <div>
+
+            <h3>
+
+              ${escapeHtml(
+                momento.titulo
+              )}
+
+            </h3>
+
+
+            <p>
+
+              ${escapeHtml(
+                momento.texto
+              )}
+
+            </p>
+
+          </div>
+
+        `;
+
+
+        timeline.appendChild(
+          item
+        );
+
+      }
+    );
+
+
+
+    /* ==========================================================
+       HISTÓRIA
+       ========================================================== */
+
+
+    const storyGrid =
+      document.getElementById(
+        "storyGrid"
+      );
+
+
+    CONFIG.historia.forEach(
+      (capitulo) => {
+
+        const item =
+          document.createElement(
+            "article"
+          );
+
+
+        item.className =
+          "story-card";
+
+
+        item.innerHTML =
+
+          '<div class="date">' +
+
+          escapeHtml(
+            capitulo.data
+          ) +
+
+          '</div>' +
+
+          '<h3>' +
+
+          escapeHtml(
+            capitulo.titulo
+          ) +
+
+          '</h3>' +
+
+          '<p>' +
+
+          escapeHtml(
+            capitulo.texto
+          ) +
+
+          '</p>';
+
+
+        storyGrid.appendChild(
+          item
+        );
+
+      }
+    );
+
+
+
+    /* ==========================================================
+       GALERIA
+       ========================================================== */
+
+
+    const gallery =
+      document.getElementById(
+        "gallery"
+      );
+
+
+    CONFIG.fotos.forEach(
+      (foto) => {
+
+        const item =
+          document.createElement(
+            "figure"
+          );
+
+
+        item.className =
+          "photo";
+
+
+        item.innerHTML = `
+
+          <img
+
+            src="${escapeAttribute(
+              foto.arquivo
+            )}"
+
+            alt="${escapeAttribute(
+              foto.legenda
+            )}"
+
+            loading="lazy"
+
+            onerror="
+              this.style.display='none';
+
+              this.parentElement.insertAdjacentHTML(
+                'afterbegin',
+
+                '<div style="
+                  height:100%;
+                  display:grid;
+                  place-items:center;
+                  padding:24px;
+                  text-align:center;
+                  color:#fff1f7;
+                  font-size:.9rem;
+                  line-height:1.6;
+                ">
+                  📷<br>
+                  Coloque esta foto em<br>
+                  <strong>
+                    ${escapeHtml(
+                      foto.arquivo
+                    )}
+                  </strong>
+                </div>'
+              )
+            "
+
+          >
+
+
+          <span>
+
+            ${escapeHtml(
+              foto.legenda
+            )}
+
+          </span>
+
+        `;
+
+
+        gallery.appendChild(
+          item
+        );
+
+      }
+    );
+
+
+
+    /* ==========================================================
+       BOTÃO DA CARTA
+       ========================================================== */
+
+
+    document
+      .getElementById(
+        "openLetter"
+      )
+      .addEventListener(
+        "click",
+        () => {
+
+          document
+            .getElementById(
+              "carta"
+            )
+            .scrollIntoView({
+              behavior: "smooth"
+            });
+
+        }
+      );
+
+
+
+    /* ==========================================================
+       BOTÃO DA SURPRESA
+       ========================================================== */
+
+
+    document
+      .getElementById(
+        "surpriseButton"
+      )
+      .addEventListener(
+        "click",
+        () => {
+
+          const box =
+            document.getElementById(
+              "surpriseBox"
+            );
+
+
+          box.classList.toggle(
+            "show"
+          );
+
+
+          if (
+            box.classList.contains(
+              "show"
+            )
+          ) {
+
+            burstHearts(18);
+
+          }
+
+        }
+      );
+
+
+
+    /* ==========================================================
+       CORAÇÕES
+       ========================================================== */
+
+
+    function burstHearts(
+      amount
+    ) {
+
+      for (
+        let i = 0;
+        i < amount;
+        i++
+      ) {
+
+        const heart =
+          document.createElement(
+            "div"
+          );
+
+
+        heart.className =
+          "floating-heart";
+
+
+        heart.textContent =
+          Math.random() > .45
+            ? "❤"
+            : "💗";
+
+
+        heart.style.left =
+          `${Math.random() * 100}vw`;
+
+
+        heart.style.fontSize =
+          `${18 + Math.random() * 25}px`;
+
+
+        heart.style.setProperty(
+          "--drift",
+          `${-80 + Math.random() * 160}px`
+        );
+
+
+        heart.style.animationDuration =
+          `${4 + Math.random() * 3}s`;
+
+
+        document.body.appendChild(
+          heart
+        );
+
+
+        setTimeout(
+          () => heart.remove(),
+          8000
+        );
+
+      }
+
+    }
+
+
+
+    /* ==========================================================
+       ESTRELAS
+       ========================================================== */
+
+
+    const sparkleLayer =
+      document.getElementById(
+        "sparkles"
+      );
+
+
+    for (
+      let i = 0;
+      i < 38;
+      i++
+    ) {
+
+      const s =
+        document.createElement(
+          "span"
+        );
+
+
+      s.className =
+        "sparkle";
+
+
+      s.style.left =
+        `${Math.random() * 100}%`;
+
+
+      s.style.top =
+        `${Math.random() * 100}%`;
+
+
+      s.style.animationDelay =
+        `${Math.random() * 3}s`;
+
+
+      s.style.animationDuration =
+        `${2 + Math.random() * 3}s`;
+
+
+      sparkleLayer.appendChild(
+        s
+      );
+
+    }
+
+
+
+    /* ==========================================================
+       SEGURANÇA
+       ========================================================== */
+
+
+    function escapeHtml(
+      value
+    ) {
+
+      return String(value)
+
+        .replaceAll(
+          "&",
+          "&amp;"
+        )
+
+        .replaceAll(
+          "<",
+          "&lt;"
+        )
+
+        .replaceAll(
+          ">",
+          "&gt;"
+        )
+
+        .replaceAll(
+          '"',
+          "&quot;"
+        )
+
+        .replaceAll(
+          "'",
+          "&#039;"
+        );
+
+    }
+
+
+    function escapeAttribute(
+      value
+    ) {
+
+      return escapeHtml(
+        value
+      );
+
+    }
+
+  </script>
+
+</body>
+</html>
